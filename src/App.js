@@ -1,7 +1,7 @@
 import {
   BrowserRouter as Router,
   Route,
-  Routes,
+  Switch,
 
 } from "react-router-dom";
 
@@ -9,7 +9,7 @@ import Home from "./routes/Home";
 import Detail from "./routes/Detail";
 function App() {
   return (<Router>
-    <Routes>
+    <Switch>
       <Route path={process.env.PUBLIC_URL+"/movie/:id"}>
         <Detail />
         </Route>
@@ -17,7 +17,7 @@ function App() {
        
         </Route>
         
-      </Routes>
+      </Switch>
     </Router>
   );
 }
