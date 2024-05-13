@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
-
+import React from 'react';
 function Movie({id,CoverImage,title,summary,genres}){
     return( <div>
         <img src={CoverImage} alt={title}/>
