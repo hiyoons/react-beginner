@@ -5,7 +5,7 @@ function Movie({id,CoverImage,title,summary,genres}){
     return( <div>
         <img src={CoverImage} alt={title}/>
         <h2>
-          <Link to= {`/movie/${id}`}>{title}</Link></h2>
+          <Link to= {`${process.env.PUBLIC_URL}/movie/${id}`}>{title}</Link></h2>
         <p>{summary}</p>
         <ul>
           {genres.map((g)=>(<li key={g}>{g}</li>))}
