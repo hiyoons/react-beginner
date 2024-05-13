@@ -1,7 +1,7 @@
 import { useParams
  } from "react-router-dom";
 
- import {useEffect} from "react";
+ import {useEffect,useState} from "react";
 
 function Detail(){
     const {id}=useParams();
