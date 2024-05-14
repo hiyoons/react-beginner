@@ -1,5 +1,5 @@
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Switch,
 
@@ -13,7 +13,7 @@ function App() {
       <Route path={`${process.env.PUBLIC_URL}/movie/:id`}>
         <Detail />
         </Route>
-      <Route path={`${process.env.PUBLIC_URL}`} > 
+      <Route path={`${process.env.PUBLIC_URL}/`} > 
       <Home />
         </Route>
         
